@@ -1,0 +1,18 @@
+package com.Swagger.controller;
+
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@Api("登录接口")
+@RestController
+public class LoginController {
+
+    @ApiOperation("登录接口")
+    @GetMapping("/loginAuth")
+    public String login() {
+        return "Hello World";
+    }
+}
+
